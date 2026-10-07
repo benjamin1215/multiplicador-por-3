@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benjamin Arancibia - Funcion por tres</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Multiplicación</h1>
+    <label>Ingresa un numero y ese será multiplicado por tres.</label>
+
+    <input type="number" id="numero" placeholder="Ingrese un numero">
+
+    <button onclick="multiplicar()">Multiplicar</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function multiplicar() {
+            const numero = document.getElementById('numero').value;
+            const resultado = numero * 3;
+            document.getElementById('resultado').innerText = "El resultado es: " + resultado;
+        }
+    </script>
+</body>
+</html>
